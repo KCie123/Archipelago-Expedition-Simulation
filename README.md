@@ -50,4 +50,56 @@ After running the program, you can input commands to manipulate the island netwo
 * f <filename>: Reads commands from a file and processes them.
 * q: Quits the program.
 
+### Example Usage
+      ```bash
+      t 1 3      # Finds the shortest path from island 1 to island 3
+      r 20       # Resizes the network to 20 islands
+      i 1 5      # Inserts a ferry connection between island 1 and 5
+      l          # Lists all current ferry connections
+
+### File Structure
+      ```bash
+      Archipelago Expedition
+      │
+      ├── makefile          # Makefile to compile the project
+      ├── Proj6main.cpp     # Main program file containing the command loop and logic
+      ├── Island.cpp        # Island class implementation
+      ├── header.h          # Header file with class definitions
+      └── README.md         # This documentation file
+
+## Class Descriptions
+
+### `ArchipelagoExpedition`
+- Manages the entire archipelago, including the adjacency list for ferry rides and the search algorithms.
+- Handles user commands through the `processCommandLoop()` function.
+- Uses `Island`, `IslandQueue`, and `IslandStack` to represent the islands and manage operations.
+
+### `Island`
+- Represents each island in the archipelago.
+- Contains a linked list of ferry connections to other islands.
+- Methods include:
+  - `setValue(int val)`: Sets a value for the island.
+  - `getValue()`: Retrieves the value of the island.
+  - `insert(int val)`: Adds a ferry connection to another island.
+  - `remove(int val)`: Removes a ferry connection.
+  - `exists(int val)`: Checks if a ferry connection exists.
+  - `clear()`: Clears all ferry connections.
+  - `printList()`: Prints the list of ferry connections.
+
+### `IslandQueue`
+- A queue implementation used in the breadth-first search algorithm.
+- Handles queue operations such as:
+  - `enqueue(int val)`: Adds a value to the queue.
+  - `dequeue()`: Removes a value from the queue.
+  - `peak()`: Gets the value at the front of the queue.
+  - `is_empty()`: Checks if the queue is empty.
+
+### `IslandStack`
+- A stack implementation used to store the path from one island to another.
+- Handles stack operations such as:
+  - `push(int val)`: Pushes a value onto the stack.
+  - `pop()`: Pops a value from the stack.
+  - `top()`: Gets the value at the top of the stack.
+  - `is_empty()`: Checks if the stack is empty.
+
   
