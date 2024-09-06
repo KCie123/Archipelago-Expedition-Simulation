@@ -52,20 +52,20 @@ After running the program, you can input commands to manipulate the island netwo
 
 ### Example Usage
       ```bash
-      t 1 3      # Finds the shortest path from island 1 to island 3
-      r 20       # Resizes the network to 20 islands
-      i 1 5      # Inserts a ferry connection between island 1 and 5
-      l          # Lists all current ferry connections
+   t 1 3      # Finds the shortest path from island 1 to island 3
+   r 20       # Resizes the network to 20 islands
+   i 1 5      # Inserts a ferry connection between island 1 and 5
+   l          # Lists all current ferry connections
 
 ### File Structure
       ```bash
-      Archipelago Expedition
-      │
-      ├── makefile          # Makefile to compile the project
-      ├── Proj6main.cpp     # Main program file containing the command loop and logic
-      ├── Island.cpp        # Island class implementation
-      ├── header.h          # Header file with class definitions
-      └── README.md         # This documentation file
+   Archipelago Expedition
+   │
+   ├── makefile          # Makefile to compile the project
+   ├── Proj6main.cpp     # Main program file containing the command loop and logic
+   ├── Island.cpp        # Island class implementation
+   ├── header.h          # Header file with class definitions
+   └── README.md         # This documentation file
 
 ## Class Descriptions
 
