@@ -51,14 +51,14 @@ After running the program, you can input commands to manipulate the island netwo
 * q: Quits the program.
 
 ### Example Usage
-    ```bash
+
     t 1 3      # Finds the shortest path from island 1 to island 3
     r 20       # Resizes the network to 20 islands
     i 1 5      # Inserts a ferry connection between island 1 and 5
     l          # Lists all current ferry connections
 
 ### File Structure
-    ```bash
+
     Archipelago Expedition
     │
     ├── makefile          # Makefile to compile the project
