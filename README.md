@@ -34,3 +34,20 @@ The program allows the user to manage a network of islands, where each island ca
 3. Run the compiled program:
     ```bash
     ./archipelago
+
+### Prerequisites
+- C++ compiler (e.g., `g++`)
+- A terminal or command-line interface
+
+### How to use the project
+After running the program, you can input commands to manipulate the island network. Below are some of the commands you can use:
+
+* t <int1> <int2>: Finds the shortest path between island <int1> and <int2>.
+* r <int>: Resizes the island network to hold <int> islands.
+* i <int1> <int2>: Inserts a ferry connection between island <int1> and <int2>.
+* d <int1> <int2>: Deletes a ferry connection between island <int1> and <int2>.
+* l: Lists all ferry connections.
+* f <filename>: Reads commands from a file and processes them.
+* q: Quits the program.
+
+  
