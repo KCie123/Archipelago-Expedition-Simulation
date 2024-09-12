@@ -33,7 +33,7 @@ The program allows the user to manage a network of islands, where each island ca
 
 3. Run the compiled program:
     ```bash
-    ./archipelago
+    ./Project6
 
 ### Prerequisites
 - C++ compiler (e.g., `g++`)
